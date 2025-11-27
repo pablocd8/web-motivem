@@ -1,0 +1,24 @@
+🧠 Motivem – Plataforma de Psicología Online
+
+Aplicación web moderna orientada a conectar pacientes con profesionales de la salud mental. La plataforma permite gestionar citas,  publicar talleres y brindar acompañamiento emocional mediante una experiencia rápida, segura y fácil de usar.
+
+🚀 Tecnologías Utilizadas
+Frontend
+
+⚛️ React
+
+🎨 TailwindCSS
+
+📦 Vite
+
+Backend
+
+🟩 Node.js
+
+🚏 Express.js
+
+
+
+Base de datos
+
+🍃 MongoDB con Mongoose
