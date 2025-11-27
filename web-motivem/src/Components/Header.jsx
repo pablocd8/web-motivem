@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Phone } from "lucide-react";
 
-const Header = () => {
+const Header = ({ showLogo = true }) => {
   const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -14,8 +14,10 @@ const Header = () => {
   ];
 
   return (
-
-    <header className="relative bg-[#efdfc2] min-h-screen w-full flex flex-col items-center justify-center">
+    <header
+  className={`relative bg-[#efdfc2] w-full flex flex-col items-center justify-center ${
+    showLogo ? "min-h-screen" : "h-auto"
+  }`}>
       {/* Botón de menú móvil */}
       <button
         className="md:hidden absolute top-6 left-6 z-20"
@@ -27,8 +29,7 @@ const Header = () => {
         </svg>
       </button>
 
-      {/* Teléfono y CTA: siempre a la derecha */}
-
+      {/* Teléfono y CTA */}
       <div className="absolute top-6 right-6 z-20 flex items-center gap-4 font-medium text-[#8b5e3b]">
         <span className="flex items-center gap-1 text-base">
           <Phone className="w-5 h-5 text-black" />
@@ -39,99 +40,65 @@ const Header = () => {
         </button>
       </div>
 
+      {/* Logo principal solo si showLogo es true */}
+      {showLogo && (
+        <div className="text-center mt-10 max-w-[420px] md:max-w-[600px] mx-auto">
+          <img
+            src="/imagen-motivem.png"
+            alt="Logo Motivem"
+            className="mx-auto w-full h-auto block transition-transform duration-300 ease-in-out hover:scale-105"
+          />
+        </div>
+      )}
 
-
-
-
-  {/* Logo */}
-    <div className="text-center mt-10 max-w-[420px] md:max-w-[600px] mx-auto">
-      <img
-        src="/imagen-motivem.png"
-        alt="Logo Motivem"
-        className="mx-auto w-full h-auto block transition-transform duration-300 ease-in-out hover:scale-105"
-      />
-    </div>
-
-
-    {/* Menú horizontal tipo header */}
+      {/* Menú horizontal */}
       <div className="hidden md:flex items-center gap-3 absolute top-6 left-5 z-20">
         {menuItems.map(({ label, color, route }) => (
           <button
             key={label}
             onClick={() => navigate(route)}
-            className="px-2 py-2 rounded  text-white text-sm hover:opacity-90 transition shadow cursor-pointer"
-            style={{
-              backgroundColor: color,
-              WebkitFontSmoothing: 'antialiased',
-              MozOsxFontSmoothing: 'grayscale',
-              textRendering: 'optimizeLegibility'
-            }}
+            className="px-2 py-2 rounded text-white text-sm hover:opacity-90 transition shadow cursor-pointer"
+            style={{ backgroundColor: color }}
           >
             {label}
           </button>
         ))}
       </div>
 
-
-
- {/* Menú móvil desplegable */}
-    <div
-      className={`fixed inset-0 bg-black/40 z-30 flex md:hidden transition-opacity duration-300 ease-out ${
-        menuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none '
-      }`}
-    >
-      <div
-        className={`relative bg-[#efdfc2] w-2/3 h-full shadow-lg p-6 flex flex-col gap-4 transform transition-transform duration-300 ease-out ${
-          menuOpen ? 'translate-x-0' : '-translate-x-full'
-        }`}
-      >
-        {/* Botón cerrar arriba a la derecha */}
-        <button
-          onClick={() => setMenuOpen(false)}
-          aria-label="Cerrar menú"
-          className="absolute top-4 right-4 p-1"
-        >
-          <svg
-            width="28"
-            height="28"
-            fill="none"
-            stroke="#8b5e3b"
-            strokeWidth="3"
-            viewBox="0 0 24 24"
-            className="cursor-pointer"
-          >
-            <path d="M6 6l12 12M6 18L18 6" />
-          </svg>
-        </button>
-
-        {/* Logo y menú desplazados hacia abajo */}
-        <div className="mt-12 flex flex-col gap-4">
-          <img
-            src="/logo-motivem-color.png"
-            alt="Logo Motivem"
-            className="block"
-          />
-          {menuItems.map(({ label, color, route }) => (
+      {/* Menú móvil */}
+      {menuOpen && (
+        <div className="fixed inset-0 bg-black/40 z-30 flex md:hidden">
+          <div className="relative bg-[#efdfc2] w-2/3 h-full shadow-lg p-6 flex flex-col gap-4 transform transition-transform duration-300 ease-out translate-x-0">
             <button
-              key={label}
-              onClick={() => {
-                setMenuOpen(false);
-                navigate(route);
-              }}
-              className="text-base py-2 rounded mb-2 cursor-pointer"
-              style={{ backgroundColor: color, color: '#fff' }}
+              onClick={() => setMenuOpen(false)}
+              aria-label="Cerrar menú"
+              className="absolute top-4 right-4 p-1"
             >
-              {label}
+              <svg width="28" height="28" fill="none" stroke="#8b5e3b" strokeWidth="3" viewBox="0 0 24 24">
+                <path d="M6 6l12 12M6 18L18 6" />
+              </svg>
             </button>
-          ))}
+
+            <div className="mt-12 flex flex-col gap-4">
+              <img src="/logo-motivem-color.png" alt="Logo Motivem" className="block" />
+              {menuItems.map(({ label, color, route }) => (
+                <button
+                  key={label}
+                  onClick={() => {
+                    setMenuOpen(false);
+                    navigate(route);
+                  }}
+                  className="text-base py-2 rounded mb-2 cursor-pointer"
+                  style={{ backgroundColor: color, color: '#fff' }}
+                >
+                  {label}
+                </button>
+              ))}
+            </div>
+          </div>
+          <div className="flex-1" onClick={() => setMenuOpen(false)} />
         </div>
-      </div>
-
-      {/* Cierra el menú si se pulsa fuera */}
-      <div className="flex-1" onClick={() => setMenuOpen(false)} />
-    </div>
-
-
+      )}
     </header>
   );
 };

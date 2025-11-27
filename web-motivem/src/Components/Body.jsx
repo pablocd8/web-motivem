@@ -14,7 +14,7 @@ const Body = () => {
                             alt="diseña tu taller" 
                             className="w-full max-w-md rounded" 
                         />
-                        <Link to="/otra-pagina" className="mt-4 px-6 py-2 border border-[#bf7b56] border-2 text-[#bf7b56] hover:bg-[#bf7b56] hover:text-white transition-colors duration-300">
+                        <Link to="/crear-taller" className="mt-4 px-6 py-2 border border-[#bf7b56] border-2 text-[#bf7b56] hover:bg-[#bf7b56] hover:text-white transition-colors duration-300">
                             SABER MÁS
                         </Link>
                     </div>
@@ -27,7 +27,7 @@ const Body = () => {
                             className="w-full max-w-md rounded" 
                         />
                         <Link to="/otra-pagina"
-                            className="mt-4 px-6 py-2 border border-[#e6ca92] border-2 text-[#8b5e3b] hover:bg-[#e7d0a3] hover:text-white transition-colors duration-300"
+                            className="mt-4 px-6 py-2 border border-[#e6ca92]  text-[#8b5e3b] hover:bg-[#e7d0a3] hover:text-white transition-colors duration-300"
                         >
                             SABER MÁS
                         </Link>
