@@ -1,12 +1,39 @@
-# React + Vite
+# Web de Psicología – Proyecto
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una **página web de psicología** con varias vistas creadas como Servicios(Psicoterapia,Motivacion para el estudio),Home,Diseña tu taller,creada con **React** y **Tailwind CSS**, incluyendo prototipo interactivo en **Figma** y carrusel de testimonios usando **Swiper.js**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## **1. Requisitos previos**
 
-## Expanding the ESLint configuration
+Antes de iniciar el proyecto, asegúrate de tener instaladas las siguientes herramientas:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [Node.js](https://nodejs.org/) (versión >= 18)
+- [npm](https://www.npmjs.com/) o [yarn](https://yarnpkg.com/)
+- Navegador moderno (Chrome, Firefox, Edge)
+
+---
+
+## **2. Clonar el repositorio**
+
+Clona el repositorio a tu máquina local:
+
+```bash
+git clone https://github.com/usuario/web-psicologia.git
+cd web-motivem
+
+
+
+npm install
+# o
+yarn install
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+npm install lucide-react
+npm install swiper
+npm install react react-dom
+
