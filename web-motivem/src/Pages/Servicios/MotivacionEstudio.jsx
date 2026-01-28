@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "../Components/Header";
 import { Link } from "react-router-dom";
+import Header from "../../Components/Header";
 
 const MotivacionEstudio = () => {
   return (
@@ -15,9 +15,9 @@ const MotivacionEstudio = () => {
           <div className="flex flex-col items-center mt-2">
             <Link to="/servicios">
               <img
-                src="/motivacion.png"
+                src="/motivacion-estudio-letrero.png"
                 alt="Motivación para el Estudio"
-                className="w-[400px] h-auto transition-transform duration-300 ease-in-out hover:scale-105 cursor-pointer"
+                className="w-[480px] h-auto transition-transform duration-300 ease-in-out hover:scale-105 cursor-pointer"
               />
             </Link>
           </div>

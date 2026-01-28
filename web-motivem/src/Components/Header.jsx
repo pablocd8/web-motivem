@@ -8,16 +8,16 @@ const Header = ({ showLogo = true }) => {
 
   const menuItems = [
     { label: 'SERVICIOS', color: '#6e9277', route: '/servicios' },
-    { label: 'EXTRAESCOLARES', color: '#cfa248', route: '/extraescolares' },
-    { label: 'TALLERES', color: '#bf7b56', route: '/talleres' },
-    { label: 'QUIENES SOMOS', color: '#94a3b8', route: '/quienes-somos' },
+    { label: 'MATERIALES', color: '#cfa248', route: '/materiales' },
+    { label: 'QUIENES SOMOS', color: '#bf7b56', route: '/quienes-somos' },
+    { label: 'CONTACTO', color: '#94a3b8', route: '/contacto' },
   ];
 
   return (
-    <header
-  className={`relative bg-[#efdfc2] w-full flex flex-col items-center justify-center ${
-    showLogo ? "min-h-screen" : "h-auto"
-  }`}>
+   <header
+  className="sticky top-0 z-50 w-full bg-[#efdfc2] flex flex-col items-center justify-center h-20
+             shadow-[0_4px_20px_rgba(0,0,0,0.15)] border-b border-[#d4c3a3]"
+>
       {/* Botón de menú móvil */}
       <button
         className="md:hidden absolute top-6 left-6 z-20"
@@ -39,17 +39,6 @@ const Header = ({ showLogo = true }) => {
           Solicitar cita
         </button>
       </div>
-
-      {/* Logo principal solo si showLogo es true */}
-      {showLogo && (
-        <div className="text-center mt-10 max-w-[420px] md:max-w-[600px] mx-auto">
-          <img
-            src="/imagen-motivem.png"
-            alt="Logo Motivem"
-            className="mx-auto w-full h-auto block transition-transform duration-300 ease-in-out hover:scale-105"
-          />
-        </div>
-      )}
 
       {/* Menú horizontal */}
       <div className="hidden md:flex items-center gap-3 absolute top-6 left-5 z-20">
@@ -100,6 +89,7 @@ const Header = ({ showLogo = true }) => {
         </div>
       )}
     </header>
+
   );
 };
 

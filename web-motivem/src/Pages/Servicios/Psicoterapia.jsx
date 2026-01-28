@@ -1,7 +1,6 @@
 import React from "react";
-import Header from "../Components/Header";
 import { Link } from "react-router-dom";
-
+import Header from "../../Components/Header";
 const Psicoterapia = () => {
   return (
     <>
@@ -18,7 +17,7 @@ const Psicoterapia = () => {
               <img
                 src="/psicoterapia-letrero.png"
                 alt="Servicios"
-                className="w-[400px] h-auto transition-transform duration-300 ease-in-out hover:scale-105 cursor-pointer"
+                className="w-[450px] h-auto transition-transform duration-300 ease-in-out hover:scale-105 cursor-pointer"
               />
             </Link>
           </div>
