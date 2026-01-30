@@ -20,10 +20,10 @@ const TecnicasEstudio = () => {
     return (
         <>
             <Header showLogo={false} /> 
-            <div className="min-h-screen w-full" style={{ backgroundColor: "#efdfc2" }}>
+            <div className="min-h-screen w-full -mt-6" style={{ backgroundColor: "#efdfc2" }}>
                 <div className="max-w-6xl mx-auto px-6 md:px-10 pt-2 pb-8">
                     {/* Letrero */} 
-                    <div className="flex flex-col items-center mt-2">
+                    <div className="flex flex-col items-center ">
                         <Link to="/servicios/talleres">
                             <img
                                 src="/tecnicas-estudio-letrero.png"
@@ -75,8 +75,9 @@ const TecnicasEstudio = () => {
                                         "Automatizar el estudio",
                                         "Adquirir técnicas de planificación, organización, lectura, comprensión, selección y memorización",
                                     ].map((benefit, index) => (
-                                        <li key={index} className="text-slate-800">
-                                            {benefit}
+                                        <li key={benefit} className="flex items-start gap-3 text-[#cfa248]">
+                                            <span className="mt-1 font-bold">✓</span>
+                                            <span className="text-slate-800">{benefit}</span>
                                         </li>
                                     ))}
                                 </ul>

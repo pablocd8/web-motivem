@@ -25,9 +25,9 @@ const ResolucionConflictos = () => {
         <>
             <Header showLogo={false} />
             <div className="min-h-screen w-full" style={{ backgroundColor: "#efdfc2" }}>
-                <div className="max-w-6xl mx-auto px-6 md:px-10 pt-2 pb-8">
+                <div className="max-w-6xl mx-auto px-6 md:px-10 pt-2 pb-8 -mt-6">
                     {/* Letrero */}
-                    <div className="flex flex-col items-center mt-2">
+                    <div className="flex flex-col items-center ">
                         <Link to="/servicios/talleres">
                             <img
                                 src="/resolucion-conflictos-letrero.png"
@@ -37,7 +37,7 @@ const ResolucionConflictos = () => {
                         </Link>
                     </div>
                     {/* Contenido principal */}
-                    <div className="flex flex-col items-center text-slate-800 leading-relaxed mt-6">
+                    <div className="flex flex-col items-center text-slate-800 leading-relaxed ">
                         <section className="max-w-3xl w-full text-left">
                             {/* Descripción Superior */}
                             <p className="mb-8 text-lg">

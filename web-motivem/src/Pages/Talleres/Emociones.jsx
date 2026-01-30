@@ -6,7 +6,7 @@ const Emociones = () => {
     return (
         <>
             <Header showLogo={false} />
-            <div className="min-h-screen w-full" style={{ backgroundColor: "#efdfc2" }}>
+            <div className="min-h-screen w-full -mt-6" style={{ backgroundColor: "#efdfc2" }}>
                 <div className="max-w-6xl mx-auto px-6 md:px-10 pt-2 pb-8">
                     {/* Letrero */}
                     <div className="flex flex-col items-center mt-2">
@@ -19,7 +19,7 @@ const Emociones = () => {
                         </Link>
                     </div>
                     {/* Contenido principal */}
-                    <div className="flex flex-col items-center text-slate-800 leading-relaxed mt-6">
+                    <div className="flex flex-col items-center text-slate-800 leading-relaxed ">
                         <section className="max-w-3xl w-full text-left">
                             {/* Descripción Superior */}
                             <p className="mb-8 text-lg">

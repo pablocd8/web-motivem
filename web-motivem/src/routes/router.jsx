@@ -17,7 +17,7 @@ import Miedos from "../Pages/Talleres/Miedos";
 import Mindfullness from "../Pages/Talleres/Mindfullness";
 import ResolucionConflictos from "../Pages/Talleres/ResolucionConflictos";
 import TecnicasEstudio from "../Pages/Talleres/TecnicasEstudio";
-
+import GuiaFamilias from "../Pages/GuiaFamilias";
 
 const Router = () => {
     return (
@@ -36,6 +36,7 @@ const Router = () => {
             <Route path="/talleres/mindfullness" element={<Mindfullness />} />
             <Route path="/talleres/resolucion-conflictos" element={<ResolucionConflictos />} />
             <Route path="/servicios/tecnicas-estudio" element={<TecnicasEstudio />} />
+            <Route path="/guia-familias" element={<GuiaFamilias />} />
         </Routes>
     );
 };
