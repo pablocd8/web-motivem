@@ -1,6 +1,8 @@
+import React from "react";
 import { Link } from "react-router-dom";
 import Header from "../../Components/Header";
-
+import Footer from "../../Components/Footer";
+import Formulario from "../../Components/Formulario";
 const Servicios = () => {
     return (
         <>
@@ -75,6 +77,8 @@ const Servicios = () => {
                     </div>
                 </section>
             </div>
+            <Footer />
+           
         </>
     );
 };

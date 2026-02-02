@@ -1,25 +1,7 @@
-// En este taller conseguirás habilidades de mediación para manejar los conflictos, aprenderás sobre qué tipos de conflicto puede haber y el procedimiento para su resolución.
-// Taller presencial
-// Edades: 4 - 18 años
-// Duración: 90 - 120 min
-// Contrata el Taller
-// La resolución de conflictos es un proceso mediante el cual se busca encontrar una solución satisfactoria a un problema o situación de desacuerdo entre dos o más personas.
-
-// En los niños / as, este proceso implica enseñarles habilidades y estrategias para resolver conflictos de manera efectiva y pacífica, lo que les
-// permitirá enfrentar situaciones desafiantes de manera más positiva y constructiva.
-
-// Beneficios del taller
-// Este taller te ayudará a:
-
-// Aprendizaje de estrategias para manejar la ansiedad y hacer frente a situaciones estresantes
-// Aumentar nuestra empatía
-// Aprender de estrategias básicas de negociación, escucha y diálogo
-// Poner en práctica las habilidades de toma de decisiones
-// Desarrollar resiliencia para enfrentarnos a situaciones difíciles
 import React from "react";
 import { Link } from "react-router-dom";
 import Header from "../../Components/Header";
-
+import Footer from "../../Components/Footer";
 const ResolucionConflictos = () => {
     return (
         <>
@@ -90,7 +72,9 @@ const ResolucionConflictos = () => {
                     </div>
                 </div>
             </div>
+            <Footer />
         </>
+
     );
 }
 export default ResolucionConflictos;

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Header from "../../Components/Header";
 import { infoTalleres } from "../../Data/talleresData";
-
+import Footer from "../../Components/Footer";
 const Talleres = () => {
     return (
         <>
@@ -92,6 +92,8 @@ const Talleres = () => {
 
                 </div>
             </div>
+            <Footer />
+
         </>
     );
 };

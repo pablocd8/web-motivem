@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, A11y, Autoplay } from 'swiper/modules';
-
+import Formulario from './Formulario';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -68,7 +68,10 @@ const CarruselReseñas = () => {
 
       {/* Sección blanca */}
       <section style={{ backgroundColor: "#efdfc2", height: "300px" }} />
+      <Formulario />
     </>
+    
+
   );
 };
 

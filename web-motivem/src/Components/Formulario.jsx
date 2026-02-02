@@ -3,6 +3,7 @@ import React from "react";
 
 const Formulario = () => {
     return (
+
         <>
         {/* Sección del Formulario - Fondo Crema */ }
         < div className = "bg-[#efdfc2] px-4 pb-10" >

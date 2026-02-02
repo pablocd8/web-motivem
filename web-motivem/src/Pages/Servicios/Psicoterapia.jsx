@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Header from "../../Components/Header";
+import Footer from "../../Components/Footer";
 
 const Psicoterapia = () => {
   return (
@@ -93,6 +94,7 @@ const Psicoterapia = () => {
             </div>
           </div>
         </div>
+        <Footer />
     </>
   );
 };

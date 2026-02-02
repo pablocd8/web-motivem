@@ -1,20 +1,7 @@
-// En este taller se trabajarán técnicas de estudio y la organización y optimización del tiempo.
-// Taller presencial
-// Edades: 8 - 18 años
-// Duración: 90 - 120 min
-// Contrata el Taller
-// Estudiar también requiere un aprendizaje.Se ha demostrado que el fracaso escolar está asociado con aquellos alumnos que no poseen unas correctas técnicas de estudio, por ello, la adquisición temprana de estas puede resultar altamente positivo.
-// Beneficios del taller
-// Este taller te ayudará a:
-
-// Aprovechar mejor el tiempo
-// Aumentar la autoestima y motivación
-// Mejorar el rendimiento académico
-// Automatizar el estudio
-// Adquirir técnicas de planificación, organización, lectura, comprensión, selección y memorización
 import React from "react";
 import { Link } from "react-router-dom";
 import Header from "../../Components/Header";
+import Footer from "../../Components/Footer";
 
 const TecnicasEstudio = () => {
     return (
@@ -86,6 +73,8 @@ const TecnicasEstudio = () => {
                     </div>
                 </div>
             </div>
+            <Footer />
+
         </>
     );
 }

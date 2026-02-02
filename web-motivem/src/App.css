@@ -1,6 +1,7 @@
 @import "tailwindcss";
 body {
     background-color: #efdfc2;
+    font-family: 'Quicksand', sans-serif !important;
 }
 .swiper-button-next,
 .swiper-button-prev {
@@ -18,3 +19,4 @@ body {
     background-color: #94a3b8 !important;
     /* color personalizado para punto activo */
 }
+
