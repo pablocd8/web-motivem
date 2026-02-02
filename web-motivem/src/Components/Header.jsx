@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Phone } from "lucide-react";
-
+import { Link } from 'react-router-dom';
 const Header = ({ showLogo = true }) => {
   const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
@@ -35,9 +35,11 @@ const Header = ({ showLogo = true }) => {
           <Phone className="w-5 h-5 text-black" />
           644 54 27 90
         </span>
+        <Link to ="/contacto" >
         <button className="bg-[#cfa248] text-white text-base px-5 py-2 rounded shadow hover:bg-[#bf7b56] transition cursor-pointer">
           Solicitar cita
         </button>
+        </Link>
       </div>
 
       {/* Menú horizontal */}

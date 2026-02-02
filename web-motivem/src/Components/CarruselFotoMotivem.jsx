@@ -6,8 +6,7 @@ const images = [
     "/foto-tarjetas.jpg",
     "/foto-cuadros.jpg",
     "/foto-mostrador.jpg",
-    "/foto-cuadros-niños.jpg",
-    "/foto-motivem-mar.jpg",
+    "/foto-cuadros-niños.jpg"
 ];
 
 const CarruselFotosMotivem = () => {

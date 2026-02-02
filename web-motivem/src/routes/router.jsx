@@ -18,7 +18,12 @@ import Mindfullness from "../Pages/Talleres/Mindfullness";
 import ResolucionConflictos from "../Pages/Talleres/ResolucionConflictos";
 import TecnicasEstudio from "../Pages/Talleres/TecnicasEstudio";
 import GuiaFamilias from "../Pages/GuiaFamilias";
-
+import QuienesSomos from "../Pages/QuienesSomos";
+import Contacto from "../Pages/Contacto";
+import AvisoLegal from "../Pages/InformacionLegal/AvisoLegal";
+import PoliticaPrivacidad from "../Pages/InformacionLegal/PoliticaPrivacidad";
+import PoliticaCookies from "../Pages/InformacionLegal/PoliticaCookies";
+import Accesibilidad from "../Pages/InformacionLegal/Accesibilidad";
 const Router = () => {
     return (
         <Routes>
@@ -37,6 +42,12 @@ const Router = () => {
             <Route path="/talleres/resolucion-conflictos" element={<ResolucionConflictos />} />
             <Route path="/servicios/tecnicas-estudio" element={<TecnicasEstudio />} />
             <Route path="/guia-familias" element={<GuiaFamilias />} />
+            <Route path="/quienes-somos" element={<QuienesSomos />} />
+            <Route path="/contacto" element={<Contacto />} />
+            <Route path="/aviso-legal" element={<AvisoLegal />} />
+            <Route path="/politica-privacidad" element={<PoliticaPrivacidad />} />
+            <Route path="/politica-cookies" element={<PoliticaCookies />} />
+            <Route path="/accesibilidad" element={<Accesibilidad/>} />
         </Routes>
     );
 };

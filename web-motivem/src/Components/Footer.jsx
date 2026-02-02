@@ -30,7 +30,7 @@ const Footer = () => {
                         <div className="space-y-2 text-sm md:text-base opacity-95">
                             <p>Avd. Albaida, 19 (bajo)</p>
                             <p>46870, Ontinyent (Valencia)</p>
-                            <p>Teléfono: 644 54 27 90</p>
+                            <p>Teléfono: +34 644 54 27 90</p>
                             <p>Email: motivem.info@gmail.com</p>
                         </div>
                     </div>
@@ -39,10 +39,10 @@ const Footer = () => {
                     <div className="flex flex-col items-center md:items-start mt-6">
                         <h3 className="font-bold text-xl mb-4">Información Legal</h3>
                         <ul className="space-y-2 text-sm md:text-base opacity-95">
-                            <li><a href="#" className="hover:underline">Aviso Legal</a></li>
-                            <li><a href="#" className="hover:underline">Política de Privacidad</a></li>
-                            <li><a href="#" className="hover:underline">Política de Cookies</a></li>
-                            <li><a href="#" className="hover:underline">Accesibilidad</a></li>
+                            <li><a href="/aviso-legal" className="hover:underline">Aviso Legal</a></li>
+                            <li><a href="/politica-privacidad" className="hover:underline">Política de Privacidad</a></li>
+                            <li><a href="/politica-cookies" className="hover:underline">Política de Cookies</a></li>
+                            <li><a href="/accesibilidad" className="hover:underline">Accesibilidad</a></li>
                         </ul>
                     </div>
                 </div>
