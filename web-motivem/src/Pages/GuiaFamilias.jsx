@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
+import DescargarPDF from "../Components/DescargarPDF";
 const GuiaFamilias = () => {
     return (
         <>
@@ -61,6 +62,7 @@ const GuiaFamilias = () => {
                     </div>
 
                 </div>
+                <DescargarPDF/>
             </div>
             <Footer />
         </>
