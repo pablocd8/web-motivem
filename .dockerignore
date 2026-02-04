@@ -1,0 +1,20 @@
+# Dependencias (Docker las instalará por su cuenta dentro)
+node_modules
+npm-debug.log
+
+# Compilación
+dist
+build
+
+# Control de versiones
+.git
+.gitignore
+
+# Archivos de sistema y entorno
+.env
+.dockerignore
+.DS_Store
+Thumbs.db
+
+# Docker logs
+docker-compose.override.yml
