@@ -3,6 +3,8 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 
 import Home from "../Pages/Home";
+import Login from "../Pages/Login";
+import Register from "../Pages/Register";
 
 import Servicios from "../Pages/Servicios/Servicios";
 import MotivacionEstudio from "../Pages/Servicios/MotivacionEstudio";
@@ -11,7 +13,7 @@ import Psicoterapia from "../Pages/Servicios/Psicoterapia";
 import OrientacionFamiliar from "../Pages/Servicios/OrientacionFamiliar";
 import AcompañamientoEstudio from "../Pages/Servicios/AcompañamientoEstudio";
 import Talleres from "../Pages/Servicios/Talleres";
-import Autoestima from "../Pages/Talleres/Autoestima"; 
+import Autoestima from "../Pages/Talleres/Autoestima";
 import Emociones from "../Pages/Talleres/Emociones";
 import Miedos from "../Pages/Talleres/Miedos";
 import Mindfullness from "../Pages/Talleres/Mindfullness";
@@ -28,6 +30,8 @@ const Router = () => {
     return (
         <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
             <Route path="/servicios" element={<Servicios />} />
             <Route path="/servicios/motivacion-estudio" element={<MotivacionEstudio />} />
             <Route path="/servicios/dificultades-aprendizaje" element={<DificultadesAprendizaje />} />
@@ -47,7 +51,7 @@ const Router = () => {
             <Route path="/aviso-legal" element={<AvisoLegal />} />
             <Route path="/politica-privacidad" element={<PoliticaPrivacidad />} />
             <Route path="/politica-cookies" element={<PoliticaCookies />} />
-            <Route path="/accesibilidad" element={<Accesibilidad/>} />
+            <Route path="/accesibilidad" element={<Accesibilidad />} />
         </Routes>
     );
 };

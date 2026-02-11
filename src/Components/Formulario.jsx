@@ -2,7 +2,7 @@ import React from "react";
 
 const Formulario = () => {
     return (
-        <div className="w-full bg-[#efdfc2] px-4">
+        <div className="w-full bg-[#efdfc2] px-4 mt-4.5">
             <div className="max-w-4xl mx-auto py-10">
 
                 <h2 className="text-[#cfa248] text-2xl font-bold mb-8 text-center md:text-left">
